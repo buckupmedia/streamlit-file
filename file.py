@@ -9,7 +9,7 @@ if df is not None:
     st.dataframe(data.head(10))
 
 st.subheader("Displaying the backend Data Directly ")
-df1 = pd.read_csv(r"C:\Users\hp\Downloads\geeks for geeks\streamlit\Products.csv")
+df1 = pd.read_csv("Products.csv")
 if df1 is not None:
     st.table(df1.head(10))
 
@@ -23,7 +23,7 @@ if img is not None:
     st.image(img)
 
 st.subheader("Displaying the Image  Directly ")
-st.image(r"C:\Users\hp\Downloads\geeks for geeks\streamlit\img.png")
+st.image("img.png")
 
 
 
@@ -35,7 +35,7 @@ if video_file is not None:
     st.video(video_file, start_time  = 1)
 
 st.subheader("[Playing the Video  Directly ")
-st.video(r"C:\Users\hp\Downloads\geeks for geeks\streamlit\video.mp4")
+st.video("video.mp4")
 
 
 
@@ -47,4 +47,4 @@ if audio_file is not None:
     st.audio(audio_file.read())
 
 st.subheader("[Playing the Audio  Directly ")
-st.audio(r"C:\Users\hp\Downloads\geeks for geeks\streamlit\song.mp3", start_time = 40)
+st.audio("song.mp3", start_time = 40)
